@@ -1,0 +1,28 @@
+.contact-us
+    .container
+        .content.contact-us_content
+             .grid-2
+                div
+                    h2.title.contact-us_title Связь с нами
+                    p.paragraph У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!
+                    .contact-us_contacts-wrap
+                        a.info-item(href="tel: +71112223344")
+                            img.header_list-img(src="img/svg/smartphone-white.svg" alt="смартфон" width="10" height="18")
+                            span.info-item_text.contact-us_info-item_text 8 (111) 222-33-44
+                        a.info-item(href="mailto:order@buhone.ru")
+                            img.header_list-img(src="img/svg/envelope-white.svg" alt="конверт" width="23" height="17")
+                            span.info-item_text.contact-us_info-item_text order@buhone.ru
+                form.form(data-form)
+                    .sub-grid-2
+                        .form_wrap
+                            span.form_name Email
+                            input.form_input(type="email" name="email" placeholder="email" data-email)
+                            span.form_error Некорректный Email
+                        .form_wrap
+                            span.form_name Телефон
+                            input.form_input(type="tel" name="tel" placeholder="+7(000)000-00-00" value="+7" data-tel)
+                            span.form_error Некорректный номер телефона
+                    .form_wrap
+                        span.form_name Сообщение
+                        textarea.form_input(name="message" rows="4" placeholder="Ваше сообщение")
+                    button.button.form_button(data-submit-button) Отправить сообщение

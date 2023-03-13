@@ -1,0 +1,22 @@
+section.content.content--small.bg-color-gray
+    .container
+        .slider
+            a(href="#").crumbs-link Наши клиенты
+            h2.title.slider_title С нами работают
+            .swiper(data-slider)
+                .swiper-wrapper
+                    - for (var i = 0; i < 4; ++i) {
+                        .swiper-slide.slider_slide
+                            .grid-4.grid-2-mobile
+                                img(src="img/microsoft.png", alt="microsoft" )
+                                img(src="img/microsoft.png", alt="microsoft" )
+                                img(src="img/microsoft.png", alt="microsoft" )
+                                img(src="img/microsoft.png", alt="microsoft" )
+                    - }
+                .slider_container
+                    .swiper-pagination.slider_pagination.slider_pagination--blue
+                    .slider_buttons
+                        button.swiper-button-prev.slider_button.slider_button--blue.slider_button--prev
+                            img.slider_button-img(src="img/svg/slider-arrow-left.svg" alt="назад" width="8" height="15")
+                        button.swiper-button-next.slider_button.slider_button--blue.slider_button--next
+                            img.slider_button-img(src="img/svg/slider-arrow-right.svg" alt="вперед" width="8" height="15")

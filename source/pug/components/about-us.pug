@@ -1,0 +1,19 @@
+section.content
+    .container
+        .about-us.grid-2
+            div
+                a(href="#").crumbs-link О нас
+                h2.title.about-us_title Компания
+                    br
+                    span.color-blue ИвановПром
+                p.paragraph.about-us_text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+            .sub-grid-2
+                - for (var i = 0; i < 4; ++i) {
+                    .achieve-card
+                        p.achieve-card_number 90
+                        p.achieve-card_text Завершено
+                            br
+                            | крупных сделок
+                        a(href="#").achieve-card_link Все кейсы
+                - }
+

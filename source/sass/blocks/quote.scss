@@ -1,0 +1,24 @@
+.quote {
+    padding: 4.5rem 9.5rem;
+    background-color: var(--color-grey);
+
+    @include vp-1024 {
+        padding: 3.2rem 6.6rem;
+    }
+
+    @include vp-768 {
+        padding: 3rem 2rem;
+    }
+}
+
+.quote_person-info {
+    margin-top: 5rem;
+
+    @include vp-1024 {
+        margin-top: 3.5rem;
+    }
+
+    @include vp-768 {
+        margin-top: 2.4rem;
+    }
+}

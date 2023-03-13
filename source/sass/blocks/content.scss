@@ -1,0 +1,23 @@
+.content {
+    padding: 14rem 0;
+
+    @include vp-1024 {
+        padding: 10rem 0;
+    }
+
+    @include vp-768 {
+        padding: 7rem 0;
+    }
+
+    &--small {
+        padding: 10rem 0;
+
+        @include vp-1024 {
+            padding: 7rem 0;
+        }
+
+        @include vp-768 {
+            padding: 4.5rem 0;
+        }
+    }
+}

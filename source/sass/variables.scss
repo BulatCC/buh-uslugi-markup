@@ -1,0 +1,30 @@
+:root {
+    --default-transition: 0.3s ease;
+
+    // Colors
+    // ---------------------------------
+    --color-default-black: #222222;
+    --color-default-white: #ffffff;
+    --color-grey: #EBEBEB;
+    --color-dark-grey: #BDBDBD;
+    --color-blue: #005FA3;
+    --color-red: #ff0000;
+    --color-white-opacity-04: rgba(255, 255, 255, 0.4);
+    --color-white-opacity-02: rgba(255, 255, 255, 0.2);
+    --color-grey-opacity: rgba(0, 0, 0, 0.6);
+    --color-blue-opacity: rgba(0, 95, 163, 0.65);
+    --color-blue-opacity-slider: rgba(0, 95, 163, 0.2);
+}
+
+// Viewports
+// ---------------------------------
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-576: 576px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+

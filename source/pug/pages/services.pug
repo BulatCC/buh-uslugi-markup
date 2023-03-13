@@ -1,0 +1,14 @@
+extends ../layout/layout
+
+block variables
+  - var title = 'Наши услуги'
+
+block content
+    include ../components/slider-full
+    section.content
+        .container
+            a(href="/main.html").crumbs-link Главная
+            span.crumbs-link Наши услгуи
+            h1.title Наши услуги
+            include ../components/our-services
+    include ../components/contact-us

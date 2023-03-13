@@ -1,0 +1,61 @@
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    @include vp-1024 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @include vp-1024 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    @include vp-576 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @include vp-1024 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include vp-768 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.grid-2-mobile {
+    @include vp-576 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.sub-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    @include vp-768 {
+        gap: 2rem;
+    }
+
+    @include vp-576 {
+        grid-template-columns: 1fr;
+
+    }
+}

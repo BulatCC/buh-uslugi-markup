@@ -1,0 +1,54 @@
+.achieve-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 25.5rem;
+    padding: 4rem;
+    background-color: var(--color-grey);
+    transition: var(--default-transition);
+    cursor: default;
+
+    &:hover {
+        background-color: var(--color-blue);
+        color: var(--color-default-white);
+
+        .achieve-card_link {
+            color: var(--color-default-white);
+        }
+    }
+
+    @include vp-1024 {
+        padding: 3rem;
+    }
+
+    @include vp-768 {
+        padding: 2rem;
+    }
+
+    @include vp-576 {
+        min-height: 22rem;
+    }
+}
+
+.achieve-card_number {
+    margin-bottom: 2rem;
+    font-size: 5.5rem;
+    line-height: 1;
+    font-weight: 900;
+
+    @include vp-768 {
+        font-size: 3.8rem;
+    }
+}
+
+.achieve-card_text {
+    font-weight: 700;
+}
+
+.achieve-card_link {
+    padding-top: 1rem;
+    margin-top: auto;
+    color: var(--color-blue);
+    font-weight: 700;
+    text-decoration: underline;
+}

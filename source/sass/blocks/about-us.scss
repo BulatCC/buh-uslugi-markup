@@ -1,0 +1,11 @@
+.about-us_title {
+    margin-bottom: 6rem;
+}
+
+.about-us_text {
+    max-width: 46rem;
+
+    @include vp-1024 {
+        max-width: unset;
+    }
+}

@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+
+    @include vp-768 {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+.nav_link {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include vp-768 {
+        font-size: 1.6rem;
+    }
+}
+

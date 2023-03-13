@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    padding: 2rem;
+    min-width: 27rem;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--color-default-white);
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: var(--color-blue);
+    transition: var(--default-transition);
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    @include vp-1024 {
+        padding: 1.8rem;
+        min-width: 20rem;
+    }
+
+    @include vp-768 {
+        padding: 1.6rem;
+        min-width: 15rem;
+    }
+}

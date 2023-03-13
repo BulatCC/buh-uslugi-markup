@@ -1,0 +1,19 @@
+.footer {
+    padding: 5rem 0 4rem 0;
+
+    @include vp-1024 {
+        padding: 3.5rem 0 2.8rem 0;
+    }
+
+    @include vp-768 {
+        padding: 2.5rem 0 2rem 0;
+    }
+}
+
+.footer_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+}

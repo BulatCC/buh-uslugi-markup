@@ -1,0 +1,18 @@
+extends ./layout/layout
+
+block variables
+  - var title = 'Бухгалтерские услуги в Санкт-Петербурге'
+
+block content
+    .container
+        h2(style='margin-top:5rem') Список страниц
+        ul
+            li(style='margin-top:2rem')
+                a(href='main.html' style={'font-size': '1.8rem', 'font-weight': '400'}) Главная
+            li(style='margin-top:2rem')
+                a(href='about.html' style={'font-size': '1.8rem', 'font-weight': '400'}) О нас
+            li(style='margin-top:2rem')
+                a(href='services.html' style={'font-size': '1.8rem', 'font-weight': '400'}) Наши услгуи
+            li(style='margin-top:2rem')
+                a(href='buh-service.html' style={'font-size': '1.8rem', 'font-weight': '400'}) Бухгалтерскоео бслуживание
+

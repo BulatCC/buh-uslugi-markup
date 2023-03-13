@@ -1,0 +1,76 @@
+.contact-us {
+    position: relative;
+    background: url('../img/spb.png') no-repeat center;
+    background-size: cover;
+    color: var(--color-default-white);
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--color-grey-opacity);
+    }
+}
+
+.contact-us_content {
+    padding-top: 12rem;
+    position: relative;
+    z-index: 1;
+
+    @include vp-1024 {
+        padding-top: 8.4rem;
+    }
+
+    @include vp-768 {
+        padding-top: 5.9rem;
+    }
+}
+
+.contact-us_title {
+    margin-bottom: 6rem;
+
+    @include vp-1024 {
+        margin-bottom: 4.2rem;
+    }
+
+    @include vp-768 {
+        margin-bottom: 3rem;
+    }
+}
+
+.contact-us_info-item_text {
+    color: var(--color-default-white);
+    font-weight: 300;
+    font-size: 2.1rem;
+
+    @include vp-768 {
+        font-size: 1.5rem;
+    }
+}
+
+.contact-us_contacts-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+    margin-top: 8rem;
+
+    @include vp-1024 {
+        margin-top: 5.6rem;
+        gap: 3rem;
+    }
+
+    @include vp-768 {
+        margin-top: 3.9rem;
+        gap: 2rem;
+    }
+}
+
+.form_button {
+    align-self: flex-end;
+    margin-top: 1rem;
+
+    @include vp-576 {
+        align-self: auto;
+    }
+}

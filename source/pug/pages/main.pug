@@ -1,0 +1,17 @@
+extends ../layout/layout
+
+block variables
+  - var title = 'Бухгалтерские услуги в Санкт-Петербурге'
+  - var pageMain = true
+
+block content
+    include ../components/slider-full
+    section.content.bg-color-gray
+        .container
+            a(href="#").crumbs-link Наши услуги
+            h2.title Мы специализируемся
+            include ../components/our-services
+    include ../components/about-us
+    include ../components/partners-slider
+    include ../components/thanks-slider
+    include ../components/contact-us

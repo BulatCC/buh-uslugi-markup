@@ -1,0 +1,22 @@
+.person-info {
+    display: flex;
+    align-items: center;
+}
+
+.person-info_img {
+    margin-right: 3.5rem;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+}
+
+.person-info_title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.person-info_text {
+    font-weight: 400;
+}
