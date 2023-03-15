@@ -21,5 +21,10 @@
     @include vp-768 {
         font-size: 1.6rem;
     }
+
+    &.active {
+        color: var(--color-blue);
+        font-weight: 900;
+    }
 }
 
